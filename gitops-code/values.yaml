@@ -1,0 +1,22 @@
+name: python-flask
+environment: test
+replicaCount: 1
+image:
+  repository: zeinan/dev-code
+  tag: latest
+  pullPolicy: Always
+
+service:
+  name: python-flask-svc
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
