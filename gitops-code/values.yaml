@@ -1,6 +1,6 @@
 name: python-flask
 environment: test
-replicaCount: 1
+replicaCount: 2
 image:
   repository: zeinan/dev-code
   tag: latest
